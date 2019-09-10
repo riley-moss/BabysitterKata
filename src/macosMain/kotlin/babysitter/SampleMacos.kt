@@ -1,4 +1,4 @@
-package sample
+package babysitter
 
 fun hello(): String = "Hello, Kotlin/Native!"
 
