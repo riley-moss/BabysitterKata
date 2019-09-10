@@ -9,6 +9,13 @@ class BabysitterTests {
     fun `given zero hours worked, get paid zero dollars`() {
         val sitter = Babysitter()
 
-        assertEquals(0, sitter.calculatePay(0))
+        assertEquals(0, sitter.calculatePay(0, 10))
+    }
+
+    @Test
+    fun `given one hour worked at a rate per hour, sitter gets paid for hourly rate`() {
+        val sitter = Babysitter()
+
+        assertEquals(10, sitter.calculatePay(1, 10))
     }
 }
